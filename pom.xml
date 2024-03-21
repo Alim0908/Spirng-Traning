@@ -11,6 +11,9 @@
     <modules>
       
         <module>Spring-01-Core-IoC-Bean-Annotation</module>
+        <module>Spring-02-Core-IoC-StayroType-Annotation</module>
+        <module>Spring-03-wiring</module>
+        <module>spring-04-Autowirring</module>
     </modules>
 
     <properties>
