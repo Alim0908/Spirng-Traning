@@ -5,7 +5,8 @@ import lombok.Setter;
 import org.springframework.stereotype.Component;
 
 @Getter
-@Setter@Component
+@Setter
+@Component
 public abstract class Motherboard {
 
     private String model;
