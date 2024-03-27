@@ -14,13 +14,13 @@ public class CommentService {
     private final CommentRepository commentRepository;
     private final CommentNotificationProxy commentNotificationProxy;
 
-private final AppConfigData appConfigData;
-private final DBConfigData dbConfigData;
+    private final AppConfigData appConfigData;
+    private final DBConfigData dbConfigData;
 
     public CommentService(CommentRepository commentRepository, @Qualifier("EMAIL") CommentNotificationProxy commentNotificationProxy, AppConfigData appConfigData, DBConfigData dbConfigData) {
         this.commentRepository = commentRepository;
         this.commentNotificationProxy = commentNotificationProxy;
-        this.appConfigData=appConfigData;
+        this.appConfigData = appConfigData;
 
         this.dbConfigData = dbConfigData;
     }
@@ -37,13 +37,13 @@ private final DBConfigData dbConfigData;
         // print abc123
         //print url
     }
-    public void printDbConfigData(){
+
+    public void printDbConfigData() {
         System.out.println(dbConfigData.getUsername());
-        System.out.println(  dbConfigData.getPassword());
+        System.out.println(dbConfigData.getPassword());
         System.out.println(dbConfigData.getType());
 
     }
-
 
 
 }
