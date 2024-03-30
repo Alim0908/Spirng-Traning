@@ -1,7 +1,5 @@
 package com.cydeo.model;
 
-
-import jdk.jfr.DataAmount;
 import lombok.Data;
 
 @Data

@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="FrameworkDetectionExcludesConfiguration">
@@ -11,6 +10,7 @@
         <option value="$PROJECT_DIR$/spring-07-SpringBoot-Demo/pom.xml" />
         <option value="$PROJECT_DIR$/spring-07-SpringBoot-Demo/src/main/java/com/cydeo/pom.xml" />
         <option value="$PROJECT_DIR$/spring-08-MVC-Controller/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-09-MVC-model/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
