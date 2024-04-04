@@ -12,7 +12,7 @@ import java.util.Random;
 
 @Controller
 public class StudentController {
-    @RequestMapping("/welcome")
+    @RequestMapping("/welecome")
     public String homPage(Model model) {
 
         model.addAttribute("name", "cydeo");
