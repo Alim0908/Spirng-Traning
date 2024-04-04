@@ -16,6 +16,7 @@ public class PC {
     private Motherboard motherboard;
 
 
+    @Autowired
     public PC(Case theCase, Monitor monitor, Motherboard motherboard) {
         this.theCase = theCase;
         this.monitor = monitor;

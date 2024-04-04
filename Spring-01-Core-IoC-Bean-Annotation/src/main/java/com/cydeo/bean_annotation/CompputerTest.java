@@ -17,7 +17,7 @@ public class CompputerTest {
         System.out.println("Creating the container");
         ApplicationContext container= new AnnotationConfigApplicationContext(ComputerConfig.class, RandomConfigration.class);
 
-        SonyMonitor sony =container.getBean(SonyMonitor.class);
+        SonyMonitor sony = container.getBean(SonyMonitor.class);
 
         AsusMotherBoard Asus=container.getBean(AsusMotherBoard.class);
 
