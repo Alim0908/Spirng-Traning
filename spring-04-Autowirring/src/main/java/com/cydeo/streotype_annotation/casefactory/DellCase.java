@@ -10,6 +10,7 @@ public class DellCase extends Case  {
         super("2208","Dell","240");
     }
 
+
     public void pressPowerButton() {
 
         System.out.println("Power button pressed");
