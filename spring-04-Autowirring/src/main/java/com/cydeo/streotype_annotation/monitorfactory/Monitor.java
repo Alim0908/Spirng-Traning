@@ -6,7 +6,6 @@ import org.springframework.stereotype.Component;
 
 @Getter
 @Setter
-
 public abstract class Monitor {
 
     private String model;

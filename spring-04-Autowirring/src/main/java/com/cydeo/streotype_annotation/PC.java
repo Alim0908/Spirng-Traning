@@ -27,7 +27,6 @@ public class PC {
         theCase.pressPowerButton();
         drawLogo();
     }
-
     private void drawLogo() {
         // Fancy graphics
         monitor.drawPixelAt();

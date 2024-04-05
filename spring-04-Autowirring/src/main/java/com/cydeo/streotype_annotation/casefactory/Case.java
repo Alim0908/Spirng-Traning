@@ -6,7 +6,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 
 @Getter
-
 public abstract class Case {
 
     private String model;

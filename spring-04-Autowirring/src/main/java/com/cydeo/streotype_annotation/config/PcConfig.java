@@ -8,4 +8,5 @@ import org.springframework.stereotype.Component;
 @ComponentScan("com.cydeo.streotype_annotation")
 public class PcConfig {
 
+
 }

@@ -25,10 +25,17 @@ public class MentorController {
         return "mentor/mentor-register";
     }
     @PostMapping("/confirm")
-    public String submitForm(@ModelAttribute("mentor") Mentor mentor){
+    public String submitForm(@ModelAttribute("mentor") Mentor mentor, Model model) {
         // how can i access  these mentor attributes dwe input in the browser
         //by putting @ModelAttribute("mentor") Mentor mentor to the parameter
-        return "mentor/mentor-confirmation";
+
+    //    model.addAttribute("mentor", new Mentor());
+        //WE PUT THIS  new object to get empty form after one mentor registerd
+
+
+//        return "mentor/mentor-confirmation";
+   //     return "mentor/mentor-register";
+        return  "redirect:/mentor/register";
     }
 
 
