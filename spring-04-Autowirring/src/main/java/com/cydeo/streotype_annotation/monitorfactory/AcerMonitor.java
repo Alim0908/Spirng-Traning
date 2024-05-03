@@ -10,6 +10,7 @@ public class AcerMonitor extends Monitor {
     public AcerMonitor() {
 
         super("25 inch beast","Acer",25);
+
     }
 
     public void drawPixelAt() {

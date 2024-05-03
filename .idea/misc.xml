@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="FrameworkDetectionExcludesConfiguration">
@@ -13,6 +14,7 @@
         <option value="$PROJECT_DIR$/spring-09-MVC-model/pom.xml" />
         <option value="$PROJECT_DIR$/spring-10-thymeleaf/pom.xml" />
         <option value="$PROJECT_DIR$/spring-10-1-thymleaf/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-11-DAta-TableCreation/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

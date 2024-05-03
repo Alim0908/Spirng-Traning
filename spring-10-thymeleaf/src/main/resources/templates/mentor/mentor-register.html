@@ -7,10 +7,10 @@
 <body>
 
 <div align="center">
-<!--   i put her  th:action="@{/mentor/confirm}" becuse when i press register button i will nevigate to ths en point ->th:action="@{/mentor/confirm}" to -->
+<!--   i put her  th:action="@{/mentor/confirm}" becuse when i press register button i will nevigate to ths end point ->th:action="@{/mentor/confirm}" to -->
 <!--    method="post"->gives the direction where we put @postMapping annotation get the informatiomn from there-->
     <!--  by this sintacst-> th:object="${mentor}"  i linked my this form to my new mentor object -->
-<form th:action="@{/mentor/confirm}" method="post" th:object="${mentor}">
+<form th:action="@{/mentor/confirm}"  method="post" th:object="${mentor}">
 <!--    this is my form-->
     <lable>First Name</lable>
 <!--    by this sintacst ->th:field="*{firstName}" is gonna assign to what i write in the text box to the ${mentor} here-->
