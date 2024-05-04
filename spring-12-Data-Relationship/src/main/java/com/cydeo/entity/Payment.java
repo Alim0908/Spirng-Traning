@@ -25,12 +25,15 @@ public class Payment {
     @Enumerated(EnumType.STRING)
     private Status paymentStatus;
 
-    private PaymentDetaile paymentDetaile;
+    //by this  @OneToOne forien key has been created
+    @OneToOne(cascade = {CascadeType.PERSIST,CascadeType.MERGE})
+    @JoinColumn(name = "payment_detail_id")
+    private PaymentDetail paymentDetail;
+
     public Payment(LocalDate createdDate, BigDecimal amount, Status paymentStatus) {
         this.createdDate = createdDate;
         this.amount = amount;
-
-        @OneToOne(mappedBy = "paymentDetail_id")
         this.paymentStatus = paymentStatus;
     }
+
 }
