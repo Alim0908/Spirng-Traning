@@ -11,7 +11,7 @@ import java.time.LocalDate;
 @Entity
 @NoArgsConstructor
 @Data
-@Table(name = "payments")
+@Table(name="payments")
 public class Payment {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -24,8 +24,9 @@ public class Payment {
 
     @Enumerated(EnumType.STRING)
     private Status paymentStatus;
-
+//
     //by this  @OneToOne forien key has been created
+//cascade = is whren we save the payment table , spring boot go to paymentDitale table and save the payment details also
     @OneToOne(cascade = {CascadeType.PERSIST,CascadeType.MERGE})
     @JoinColumn(name = "payment_detail_id")
     private PaymentDetail paymentDetail;
