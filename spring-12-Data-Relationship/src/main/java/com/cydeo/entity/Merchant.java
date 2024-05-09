@@ -24,7 +24,6 @@ public class Merchant {
 
     @OneToMany
     private List<Payment> payment;
-
     public Merchant(String name, String code, BigDecimal transactionFee, BigDecimal commissionFee, Integer payoutDelayCount) {
         this.name = name;
         this.code = code;
