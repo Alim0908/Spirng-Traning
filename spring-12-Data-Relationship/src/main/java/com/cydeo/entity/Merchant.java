@@ -5,9 +5,10 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.math.BigDecimal;
+import java.util.List;
 
 @Entity
-@Table
+@Table()
 @NoArgsConstructor
 @Data
 public class Merchant {
@@ -20,6 +21,9 @@ public class Merchant {
     private BigDecimal transactionFee;
     private BigDecimal commissionFee;
     private Integer payoutDelayCount;
+
+    @OneToMany
+    private List<Payment> payment;
 
     public Merchant(String name, String code, BigDecimal transactionFee, BigDecimal commissionFee, Integer payoutDelayCount) {
         this.name = name;
