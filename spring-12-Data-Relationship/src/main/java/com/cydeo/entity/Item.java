@@ -5,6 +5,8 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.List;
+
 @Entity
 @Data
 @NoArgsConstructor
@@ -16,6 +18,9 @@ public class Item {
 
     private String name;
     private String code;
+
+    @ManyToMany
+    private List<Cart> cart;
 
     public Item(Long id, String name, String code) {
         this.id = id;
