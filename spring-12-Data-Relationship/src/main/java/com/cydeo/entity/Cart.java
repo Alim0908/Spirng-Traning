@@ -4,6 +4,8 @@ import jakarta.persistence.*;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.List;
+
 @Entity
 @Data
 @NoArgsConstructor
@@ -12,4 +14,9 @@ public class Cart {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @ManyToMany
+    @JoinTable(name = "cart_item_rel",
+    joinColumns = @JoinColumn(name = "c_id"),
+   inverseJoinColumns =@JoinColumn(name = "i_id"))//by this we change forien keys name
+    private List<Item> items;
 }
