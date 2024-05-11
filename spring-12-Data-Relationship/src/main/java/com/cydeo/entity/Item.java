@@ -10,7 +10,7 @@ import java.util.List;
 @Entity
 @Data
 @NoArgsConstructor
-@Table(name="items")
+@Table(name = "items")
 public class Item {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -19,11 +19,11 @@ public class Item {
     private String name;
     private String code;
 
-    @ManyToMany(mappedBy = "items")
+    @ManyToMany(mappedBy = "itemList")
     private List<Cart> cart;
 
-    public Item(Long id, String name, String code) {
-        this.id = id;
+    public Item( String name, String code) {
+
         this.name = name;
         this.code = code;
     }
