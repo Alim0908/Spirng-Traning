@@ -14,12 +14,20 @@ import java.time.LocalDateTime;
 @NoArgsConstructor
 public class MovieCinema  extends BaseEntity{
 
+
     @Column(columnDefinition = "TIMESTAMP")
     private LocalDateTime dateTime;
 
-    @ManyToOne(fetch = FetchType.LAZY)// WE must put this annotation on the many side
-    private  Movie movie;
+    @ManyToOne(fetch = FetchType.LAZY)
+    private Movie movie;
     @ManyToOne(fetch = FetchType.LAZY)
     private Cinema cinema;
+
+    @Override
+    public String toString() {
+        return "MovieCinema{" +
+                "dateTime=" + dateTime +
+                '}';
+    }
 
 }
