@@ -13,6 +13,6 @@ public class QueryDemo implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-
+        System.out.println("findByCountry:"+regionRepository.findByCountry("Canada"));
     }
 }
