@@ -7,6 +7,7 @@ import org.springframework.stereotype.Component;
 import java.util.List;
 
 public interface RegionRepository extends JpaRepository<Region, Integer> {
+
     //display all the regions in canada
     List<Region> findByCountry(String country);
 
