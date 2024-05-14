@@ -7,6 +7,7 @@ import java.time.LocalDate;
 import java.util.List;
 
 public interface EmployeeRepository extends JpaRepository<Employee,Long> {
+
     //Display all employees with email address ""
 List<Employee> findByEmail(String email);
 
