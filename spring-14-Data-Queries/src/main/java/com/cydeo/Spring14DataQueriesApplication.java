@@ -7,6 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class Spring14DataQueriesApplication {
 
 	public static void main(String[] args) {
+
 		SpringApplication.run(Spring14DataQueriesApplication.class, args);
 	}
 
