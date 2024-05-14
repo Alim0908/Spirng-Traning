@@ -8,9 +8,9 @@ import lombok.NoArgsConstructor;
 
 @Entity
 @NoArgsConstructor
-@Table(name = "department")
+@Table(name = "departments")
 @Data
-public class Departmnet {
+public class Department {
 @Id
     private  String department;
     private String division;

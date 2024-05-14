@@ -1,10 +1,7 @@
 package com.cydeo.entity;
 
 import com.cydeo.enums.Gender;
-import jakarta.persistence.Entity;
-import jakarta.persistence.EnumType;
-import jakarta.persistence.Enumerated;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import jdk.jshell.spi.SPIResolutionException;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -15,7 +12,7 @@ import java.time.LocalDate;
 @Data
 @NoArgsConstructor
 @Table(name = "employees")
-public class Employee extends BaseEntity{
+public class Employee extends BaseEntity {
 
     private String firstName;
     private String lastName;
@@ -25,7 +22,11 @@ public class Employee extends BaseEntity{
     @Enumerated(EnumType.STRING)
     private Gender gender;
     private Integer salary;
-
+    @ManyToOne
+    @JoinColumn(name="department")
     private Department department;
+    @ManyToOne
+    @JoinColumn(name="region_id")
+    private Region region;
 
 }
