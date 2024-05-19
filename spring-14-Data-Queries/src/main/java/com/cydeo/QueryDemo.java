@@ -22,21 +22,21 @@ public class QueryDemo implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
 
-        System.out.println("----------regions------------");
-        System.out.println("findByCountry:"+regionRepository.findByCountry("Canada"));
-        System.out.println("findByCountryContaining:"+regionRepository.findByCountryContaining("United"));
-        System.out.println("findByCountryContainsOrderByRegionDesc:"+regionRepository.findByCountryContainsOrderByRegionDesc("United"));
-        System.out.println("findTopByCountry:"+regionRepository.findTopByCountry("United States"));
-        System.out.println("findTop2ByCountry:"+regionRepository.findTop2ByCountry("United States"));
-        System.out.println("findTopByCountryContainsOrderByRegion:"+regionRepository.findTopByCountryContainsOrderByRegion("United States"));
+        System.out.println("-----------REGIONS-----------");
 
-        System.out.println("----------departments------------");
-        System.out.println("findByDepartment"+departmentRepository.findByDepartment("Furniture"));
-        System.out.println("findByDivision"+departmentRepository.findByDivision("Health"));
-        System.out.println("findByDivisionEndsWith"+departmentRepository.findByDivisionEndsWith("ics"));
-        System.out.println("findDistinctTop2ByDivisionContains"+departmentRepository.findDistinctTop2ByDivisionContains("Health"));
+        System.out.println("findByCountry:" + regionRepository.findByCountry("Canada"));
+        System.out.println("findByCountryContaining:" + regionRepository.findByCountryContaining("United"));
+        System.out.println("findByCountryContainsOrderByRegion:" + regionRepository.findByCountryContainsOrderByRegion("United"));
+        System.out.println("findTop2ByCountry:" + regionRepository.findTop2ByCountry("United States"));
+        System.out.println("findTopByCountryContainsOrderByRegion:" + regionRepository.findTopByCountryContainsOrderByRegion("United States"));
 
-        System.out.println("---------------employees--------------------");
+        System.out.println("-----------DEPARTMENTS----------");
+        System.out.println("findByDepartment:" + departmentRepository.findByDepartment("Furniture"));
+        System.out.println("findByDivision:" + departmentRepository.findByDivision("Health"));
+        System.out.println("findByDivisionEndsWith:" + departmentRepository.findByDivisionEndsWith("ics"));
+        System.out.println("findDistinctTop3ByDivisionContains:" + departmentRepository.findDistinctTop3ByDivisionContains("Hea"));
+
+        System.out.println("-----------EMPLOYEES----------");
         System.out.println(employeeRepository.retrieveEmployeeDetail());
     }
 }
