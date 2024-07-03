@@ -40,12 +40,23 @@ public class CourseController_ResponseEntity {
     }
 
     @PostMapping
-    public ResponseEntity<CourseDTO> createCourse(@RequestBody CourseDTO course){
+    public ResponseEntity<CourseDTO> createCourse(@RequestBody CourseDTO course) {
         return ResponseEntity
                 .status(HttpStatus.CREATED)
-                .header("Operation","Create")
+                .header("Operation", "Create")
                 .body(courseService.createCourse(course));
 
+    }
+
+    @DeleteMapping("{id}")
+    public ResponseEntity<Void> deleteCourseById(@PathVariable("id") Long courseId) {
+        courseService.deleteCourseById(courseId);
+        return ResponseEntity.noContent().build();
+    }
+
+    public ResponseEntity<Void> updateCourse(@PathVariable("{id}") Long courseId, @RequestBody CourseDTO courseDTO) {
+        courseService.updateCourse(courseId, courseDTO);
+        return ResponseEntity.noContent().build();
     }
 
 }
