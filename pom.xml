@@ -18,6 +18,7 @@
         <module>spring-06-Core-BeanScope</module>
         <module>spring-07-SpringBoot-Demo</module>
         <module>spring-08-core-practice</module>
+        <module>spring-17-REST-Consume</module>
     </modules>
 
     <properties>

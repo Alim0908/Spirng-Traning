@@ -21,11 +21,13 @@
         <option value="$PROJECT_DIR$/spring-13-Data-CinemaLab/pom.xml" />
         <option value="$PROJECT_DIR$/spring-14-Data-Queries/pom.xml" />
         <option value="$PROJECT_DIR$/spring-15-REST/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-17-REST-ConsumingAPI/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
         <option value="$PROJECT_DIR$/Spring-01-Core-IoC-Bean-Ammota/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-17-REST-Consume/pom.xml" />
       </set>
     </option>
   </component>
