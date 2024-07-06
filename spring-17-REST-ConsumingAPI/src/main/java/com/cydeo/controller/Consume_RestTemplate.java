@@ -12,11 +12,13 @@ import java.util.Arrays;
 
 @RestController
 @RequestMapping("/cydeo")
-public class Consume_RestTemplat {
-    private final String URI="https://jsonplaceholder.typicode.com/users";
+public class Consume_RestTemplate {
+
+    private final String URI = "https://jsonplaceholder.typicode.com/users";
+
     private final RestTemplate restTemplate;
 
-    public Consume_RestTemplat(RestTemplate restTemplate) {
+    public Consume_RestTemplate(RestTemplate restTemplate) {
         this.restTemplate = restTemplate;
     }
 
@@ -25,11 +27,15 @@ public class Consume_RestTemplat {
 
         return restTemplate.getForEntity(URI, User[].class);
     }
-@GetMapping("{id}")
+
+    @GetMapping("{id}")
     public Object readUser(@PathVariable("id") Integer id){
-    String URL = URI+"/{id}";
-    return  restTemplate.getForObject(URL,Object.class,id);
-}
+
+        String URL = URI + "/{id}";
+
+        return restTemplate.getForObject(URL, Object.class,id);
+
+    }
 
     @GetMapping("/test")
     public ResponseEntity<Object> consumePostFromDummyApi(){
